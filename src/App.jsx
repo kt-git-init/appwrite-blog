@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { useDispatch } from "react-redux";
-import { login, logout } from "./features/slices/authSlice";
+import { login, logout } from "./features/auth/authSlice";
 import { Circles } from "react-loader-spinner";
 import{Header, Footer} from "./components"
 import { Outlet } from "react-router-dom";
@@ -32,7 +32,7 @@ function App() {
 
   return !loading ? (
     <div className="min-h-screen flex flex-wrap content-between bg-black text-white">
-    <div className="w-full block">
+    <div className="w-full block ">
     <Header/>
     <main>
       {/* <Outlet/> */}
